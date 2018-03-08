@@ -19,7 +19,7 @@ public class Consumer {
     
     private static final Logger log = LoggerFactory.getLogger(Consumer.class);
    
-    @JmsListener(destination = "inmemory.queue")
+    @JmsListener(destination = "standalone.queue")
     public void consume(String msg) {
         log.info("Received msg : {}", msg);
     }
